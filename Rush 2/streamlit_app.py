@@ -104,7 +104,7 @@ TREND_DEFAULTS = {
 
 def show_trends_fixed(long_df: pd.DataFrame, granularity: str, titre_suffix: str):
     params = TREND_DEFAULTS[granularity]
-    st.markdown(f"### 🔎 Détecter les tendances — {titre_suffix}")
+    st.markdown(f"###  Détecter les tendances — {titre_suffix}")
     st.caption(
         f"Lissage: **{'ON' if params['smooth'] else 'OFF'}**, "
         f"fenêtre: **{params['window']}**, "
